@@ -18,9 +18,13 @@ p {
   padding: 0;
 }
 
+hr {
+  margin-top: 16px;
+}
+
 .container {
   min-height: 100vh;
-  max-width: 1024px;
+  max-width: 792px;
   padding: 0;
   margin: auto;
 }
@@ -28,7 +32,7 @@ p {
 .highlights {
   background-color: #293e49;
   color: #fff;
-  width: 30%;
+  width: 180px;
   padding: 4rem 2rem;
   word-wrap: break-word;
   display: table-cell;
@@ -38,7 +42,7 @@ p {
 .details {
   color: #293e49;
   background-color: #fff;
-  width: 70%;
+  width: 612px;
   padding: 4rem 2rem;
   word-wrap: break-word;
   display: table-cell;
@@ -56,13 +60,25 @@ p {
 }
 
 .category {
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 8px;
   font-weight: 500;
+}
+
+.title1 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.title2 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .b500 {
@@ -70,16 +86,28 @@ p {
 }
 
 .value {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   display: block;
+  font-size: 0.85rem;
+}
+
+.experience-hierarchy {
+  padding-inline-start: 0px;
+  margin-bottom: 8px;
 }
 
 .experience-hierarchy > li {
-  margin-bottom: 8px;
+  margin-bottom: 0px;
+  list-style-type: none;
 }
 
 ul {
   padding-inline-start: 18px;
+  margin-top: 0;
+}
+
+li {
+  text-align: left;
 }
 
 .subval {
@@ -122,9 +150,22 @@ ul {
   align-items: center;
   margin-bottom: 4px;
   color: gray;
+  font-size: 0.85rem;
 }
 
 .address > .material-icons-outlined {
   margin-left: -3px;
   margin-right: 4px;
+  font-size: 1rem;
+}
+
+.gridLine {
+  display: flex;
+  /* grid-template-columns: 0.75fr 1fr; */
+  justify-content: space-between;
+  column-gap: 4px;
+}
+
+.gridLine > .value {
+  margin-bottom: 4px;
 }
